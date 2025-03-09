@@ -41,7 +41,7 @@ function generateApology() {
 
         I deeply regret ${reason} and the distress it has caused. Although I mentioned ${excuse} in my defense, I understand it doesn't excuse my actions. My remorse is at ${guilt}/10, and I am determined to improve.
 
-        As a step towards making amends, I will ${makeup}.
+        As a step towards making amends, I will ${makeup.toLowerCase()}.
 
         Yours truly,
         ${name}
