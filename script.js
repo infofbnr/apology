@@ -4,7 +4,7 @@ function generateApology() {
     let reason = document.getElementById("reason").value;
     let excuse = document.getElementById("excuse").value;
     let guilt = document.getElementById("guilt").value;
-    let makeup = document.getElementById("makeup").value;
+    let makeup = document.getElementById("makeup").value.toLowerCase();
 
     if (!name || !friend || !makeup) {
         alert("Please fill in all required fields.");
@@ -41,7 +41,7 @@ function generateApology() {
 
         I deeply regret ${reason} and the distress it has caused. Although I mentioned ${excuse} in my defense, I understand it doesn't excuse my actions. My remorse is at ${guilt}/10, and I am determined to improve.
 
-        As a step towards making amends, I will ${makeup.toLowerCase()}.
+        As a step towards making amends, I will ${makeup}.
 
         Yours truly,
         ${name}
