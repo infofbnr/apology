@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ddbcbc; /* Light Gray */
+    color: black; /* Dark Teal for text */
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    background: #E3D2C3; /* Beige */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    background: #EAEAEA; /* Light Gray */
+    color: #000000; /* Dark Teal for text */
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: #66D2CE; /* Teal */
+    color: #EAEAEA; /* Light Gray for text */
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #2DAA9E; /* Dark Teal */
+}
+
+.output {
+    margin-top: 20px;
+    padding: 15px;
+    background: #E3D2C3; /* Beige */
+    border-radius: 5px;
+    display: none;
+}
+
+.begg {
+    display: flex;
+    align-items: center;
+}
+
+.begg label {
+    margin-left: 8px; /* Adds a small gap between checkbox and label */
+    display: inline-block;
+}

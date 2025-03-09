@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apology Form Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Apology Form Generator</h2>
+        
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="friend">Apologizing to:</label>
+        <input type="text" id="friend" placeholder="Enter their name" required>
+
+        <label for="reason">Reason for Apology:</label>
+        <select id="reason">
+            <option value="I forgot your birthday.">I forgot your birthday.</option>
+            <option value="I accidentally ate the last slice of pizza.">I accidentally ate the last slice of pizza.</option>
+            <option value="I didn't text back fast enough.">I didn't text back fast enough.</option>
+            <option value="I borrowed something and forgot to return it.">I borrowed something and forgot to return it.</option>
+            <option value="I made a joke that went too far.">I made a joke that went too far.</option>
+            <option value="I got distracted and ignored your message.">I got distracted and ignored your message.</option>
+            <option value="I didn't show up when I said I would.">I didn't show up when I said I would.</option>
+            <option value="I was late and made you wait.">I was late and made you wait.</option>
+            <option value="I didn't listen when I should have.">I didn't listen when I should have.</option>
+        </select>
+        
+
+        <label for="excuse">Excuse:</label>
+        <select id="excuse">
+            <option value="I was too tired to think straight.">I was too tired to think straight.</option>
+            <option value="I was possessed by bad decision-making.">I was possessed by bad decision-making.</option>
+            <option value="The universe conspired against me.">The universe conspired against me.</option>
+            <option value="My brain lagged.">My brain lagged.</option>
+            <option value="I was on autopilot.">I was on autopilot.</option>
+            <option value="I got lost in my own thoughts.">I got lost in my own thoughts.</option>
+            <option value="I was having one of those days.">I was having one of those days.</option>
+        </select>
+        
+        <label for="guilt">Guilt Level (1-10):</label>
+        <input type="number" id="guilt" min="1" max="10" value="5">
+
+        <label for="makeup">How will you make up for it?</label>
+        <textarea id="makeup" placeholder="Write your way to redemption... (don't include 'I will')" required></textarea>
+
+        <button onclick="generateApology()">Generate Apology</button>
+
+        <div class="output" id="apologyOutput">
+            <h3>Generated Apology:</h3>
+            <p id="apologyText"></p>
+            <button onclick="copyApology()">Copy to Clipboard</button>
+        </div>
+    </div>
+    <h5>made with ❤️ by mano</h5>
+    <script src="script.js"></script>
+</body>
+</html>
