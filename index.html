@@ -12,10 +12,10 @@
         <h2>Apology Form Generator</h2>
         
         <label for="name">Your Name:</label>
-        <input type="text" id="name" placeholder="Enter your name" required>
+        <input type="text" id="name" placeholder="Enter your name" required autocomplete="off">
 
         <label for="friend">Apologizing to:</label>
-        <input type="text" id="friend" placeholder="Enter their name" required>
+        <input type="text" id="friend" placeholder="Enter their name" required autocomplete="off">
 
         <label for="reason">Reason for Apology:</label>
         <select id="reason">
@@ -46,7 +46,7 @@
         <input type="number" id="guilt" min="1" max="10" value="5">
 
         <label for="makeup">How will you make up for it?</label>
-        <textarea id="makeup" placeholder="Write your way to redemption... (don't include 'I will')" required></textarea>
+        <textarea id="makeup" placeholder="Write your way to redemption... (don't include 'I will')" required autocomplete="off"></textarea>
 
         <button onclick="generateApology()">Generate Apology</button>
 
